@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "413d31df-9d7c-45ec-8afb-d55156808a1e",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 363,
+  "height": 363,
+  "platformSettings": {},
+  "subMetas": {
+    "buy bk kuang": {
+      "ver": "1.0.4",
+      "uuid": "04cea9e4-6f11-4a43-aad6-fb8348f4106f",
+      "rawTextureUuid": "413d31df-9d7c-45ec-8afb-d55156808a1e",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 363,
+      "height": 363,
+      "rawWidth": 363,
+      "rawHeight": 363,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "msg",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 1.7333333333333334,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "lay_wrap": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": -46,
+              "curve": "linear"
+            },
+            {
+              "frame": 0.2833333333333333,
+              "value": 0
+            },
+            {
+              "frame": 1.2666666666666666,
+              "value": 0,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 1.7333333333333334,
+              "value": 30
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.2833333333333333,
+              "value": 255
+            },
+            {
+              "frame": 1.2666666666666666,
+              "value": 255,
+              "curve": "linear"
+            },
+            {
+              "frame": 1.7333333333333334,
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

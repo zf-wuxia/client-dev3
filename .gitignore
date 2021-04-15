@@ -1,0 +1,7 @@
+/library
+/settings
+/local
+/temp
+/build
+# Rubeex temp dir
+/.rubeex/

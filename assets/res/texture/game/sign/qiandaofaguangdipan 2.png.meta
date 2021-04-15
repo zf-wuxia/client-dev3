@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "a12472d3-e6cd-43f5-8e5b-52b75f61af7b",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 281,
+  "height": 140,
+  "platformSettings": {},
+  "subMetas": {
+    "qiandaofaguangdipan 2": {
+      "ver": "1.0.4",
+      "uuid": "12263dd1-2318-4e2c-9667-2ce60c5c5093",
+      "rawTextureUuid": "a12472d3-e6cd-43f5-8e5b-52b75f61af7b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 281,
+      "height": 140,
+      "rawWidth": 281,
+      "rawHeight": 140,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

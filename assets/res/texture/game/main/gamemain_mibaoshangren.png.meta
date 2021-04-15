@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "9f2e5402-576c-4693-b2e5-ba3c5a3f9332",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 128,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "gamemain_mibaoshangren": {
+      "ver": "1.0.4",
+      "uuid": "5e663f14-f382-452e-8339-c7e5412be785",
+      "rawTextureUuid": "9f2e5402-576c-4693-b2e5-ba3c5a3f9332",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0,
+      "trimX": 14,
+      "trimY": 15,
+      "width": 99,
+      "height": 98,
+      "rawWidth": 128,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
