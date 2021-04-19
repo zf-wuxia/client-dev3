@@ -1,7 +1,8 @@
 import { Page } from "../core/Page";
-import { ViewInfo } from "../core/View";
+import { PageInfo } from "../core/View";
 import { ideal } from "../ideal";
 import { GameLayer } from "../support/enum/GameLayer";
+import { AssetUtils } from "../support/utils/AssetUtils";
 
 export class PageManager {
     private _activePage: Page;
@@ -10,7 +11,7 @@ export class PageManager {
         this._activePage = null;
     }
 
-    show(info: ViewInfo, data?: object) {
+    show(info: PageInfo, data?: object) {
         let scene = ideal.scene.currentScene;
         let layer = scene.getLayer(GameLayer.UI);
 
@@ -33,19 +34,25 @@ export class PageManager {
         });
     }
 
-    preload(info: ViewInfo) {
-        cc.resources.preload(info.url, cc.Prefab);
+    preload(info: PageInfo) {
+        cc.resources.preload(
+            AssetUtils.getPrefab(info.url),
+            cc.Prefab
+        );
     }
 
-    load(info: ViewInfo): Promise<cc.Prefab> {
+    load(info: PageInfo): Promise<cc.Prefab> {
         return new Promise((resolve, reject) => {
-            cc.resources.load(info.url, cc.Prefab, (err: Error, prefab: cc.Prefab) => {
-                if (err != null) {
-                    cc.error(err), reject(err);
-                    return;
-                }
-                resolve(prefab);
-            });
+            cc.resources.load(
+                AssetUtils.getPrefab(info.url),
+                cc.Prefab,
+                (err: Error, prefab: cc.Prefab) => {
+                    if (err != null) {
+                        cc.error(err), reject(err);
+                        return;
+                    }
+                    resolve(prefab);
+                });
         });
     }
 }

@@ -11,7 +11,7 @@ const PRELOAD_ASSETS = [
     { type: LoaderType.PREFAB, url: 'Login/ReadyModule/ReadyModule' },
     { type: LoaderType.PREFAB, url: 'Login/RegisterModule/RegisterModule' },
     { type: LoaderType.PREFAB, url: 'Login/ServerModule/ServerModule' },
-    { type: LoaderType.PREFAB, url: 'Game/Home/HomePage' }
+    { type: LoaderType.PREFAB, url: 'Game/HomePage' }
 ];
 
 export class DefaultEnter extends cc.Component {

@@ -5,8 +5,20 @@ import { GameLayer, GameLayerNames } from "../support/enum/GameLayer";
 import { Module } from "./Module";
 import { View } from "./View";
 
+const { ccclass, property } = cc._decorator
+
+@ccclass
 export class Scene extends View {
     protected modules: { [key: string]: IModule } = {};
+
+    @property({ serializable: true })
+    private _creatLayer: boolean = false;
+    @property({ serializable: true })
+    public get creatLayer(): boolean { return this._creatLayer; }
+    public set creatLayer(v: boolean) {
+        this._creatLayer = v;
+        if (v) { this.creatLayers(); }
+    }
 
     private _layers: cc.Node[] = [];
 
@@ -78,6 +90,13 @@ export class Scene extends View {
     }
 
     private initLayers() {
+        this.creatLayers();
+        this.ready();
+        this.showView();
+    }
+
+    private creatLayers() {
+        this._layers.length = 0;
         for (let i = 0; i < GameLayerNames.length; i++) {
             let layer = this.node.getChildByName(GameLayerNames[i]);
             if (layer == null) {
@@ -87,8 +106,5 @@ export class Scene extends View {
             }
             this._layers.push(layer);
         }
-
-        this.ready();
-        this.showView();
     }
 }

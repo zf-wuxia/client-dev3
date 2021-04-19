@@ -1,5 +1,7 @@
 import { Page } from "../../../framework/core/Page";
+import { ideal } from "../../../framework/ideal";
 import { MenuType } from "../../config/namings/MenuType";
+import { ViewMenu } from "../../config/namings/ViewMenu";
 
 const { ccclass, property } = cc._decorator;
 
@@ -79,6 +81,8 @@ export default class HomePage extends Page {
 
     private menuBattle() {
         cc.log('menuBattle');
+
+        ideal.popup.show(ViewMenu.MSG_POPUP);
     }
 
     private menuClub() {

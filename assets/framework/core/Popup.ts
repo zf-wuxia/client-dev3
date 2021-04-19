@@ -1,4 +1,5 @@
 import { PopupAnimType } from "../config/Enum";
+import { ideal } from "../ideal";
 import { View } from "./View";
 
 const { ccclass, property } = cc._decorator;
@@ -14,6 +15,10 @@ export class Popup extends View {
     show(parent: cc.Node, data?: object) {
         super.show(parent, data);
         this.onShow();
+    }
+
+    hide() {
+        ideal.popup.__hide(this.node);
     }
 
     onLoad() {

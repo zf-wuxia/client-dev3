@@ -5,7 +5,7 @@ const { ccclass, menu } = cc._decorator;
 
 @ccclass
 export class View extends cc.Component {
-    protected data: object;
+    protected data: any;
 
     private _viewName: string;
     get viewName(): string { return this._viewName; }
@@ -45,7 +45,7 @@ export class View extends cc.Component {
         ideal.event.off(eventName, func, this);
     }
 
-    protected ready(data?: object) {
+    protected ready(data?: any) {
         this.data = data;
     }
 
@@ -54,8 +54,15 @@ export class View extends cc.Component {
     }
 }
 
-export type ViewInfo = {
-    name: string,
-    url: string,
-    priority?: number,
+export type PageInfo = {
+    name: string;
+    url: string;
 };
+
+export type PopupInfo = {
+    name: string;
+    url: string;
+    priority?: number;
+    only: boolean;    // 唯一Popup会顶替掉前面相同的Popup
+    orderly: boolean; // 有秩序的Popup当显示优先级低于当前正在显示的Popup会进去堆栈
+}
